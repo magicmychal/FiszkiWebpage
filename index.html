@@ -4,30 +4,32 @@
 <meta charset="utf-8">
 <title>Fiszki App</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="jquery.pin.js"></script>
 </head>
-
 <body>
-<div id="wrapper">
 <div id="header"><img id="logo" src="img/logo.png" width="457" height="192" alt=""/></div>
 <div id="content">
-<div class="css-slideshow">
-	<figure>
-    <img id="slide" src="Screenshots/Screenshot_2015-10-19-21-14-42.png"/>
-    <!-- tu można wpisać dodatkowy opis <figcaption><strong>CSS3:</strong>CSS3 delivers a...</figcaption> -->
-    </figure>
-    <figure>
-    <img id="slide" src="Screenshots/Screenshot_2015-10-28-20-08-43.png"/>
-    </figure>
-    <figure>
-    <img id="slide" src="Screenshots/Screenshot_2015-10-31-14-12-55.png"/>
-    </figure>
-    <figure><img src="Screenshots/Screenshot_2015-11-03-16-23-24.png" width="270" height="100%" id="slide2"/></figure>
+  <div class="pinned"> <img class="slide" id="picture1" src="Screenshots/Screenshot_2015-10-19-21-14-42.png"/></div>
+    <div class="pinned"> <img class="slide" id="picture2" src="Screenshots/Screenshot_2015-10-28-20-08-43.png"/></div>
+    <div class="pinned"> <img class="slide" id="picture3" src="Screenshots/Screenshot_2015-10-31-14-12-55.png"/></div>
+   <img class="nexus-frame" src="img/Nexus5.png" />
+    <h1>Ucz się słówek szybciej niż kiedyolwiek! </h1>
+    <p>Aplikacja fiszki powzstałą z myślą o każdej osobie, <br>która chce w krótkim okresie czasu nauczyć się słów w języku obcym. <br>Dzięki aplikacji Fiszki nie trzeba spędzać ani 5 minut na nukę, <br>ponieważ uczysz sie przez chwilę co 15 minut.<br> Daje to świetne rezultaty i nie zajmuje czasu!<br> Wsyzstko co musisz zrobić, to wpisać słowa, których chcesz się nauczyć</p>
+
 </div>
-<img id="nexus-frame" src="img/Nexus5.png" />
-</div>
-<div id="footer">
-Copyright
-</div>
-</div>
+<div id="afterpic">tu nic nie ma</div>
+
+    
+    
+    
+    
+    <!-- PIN ALL THE THINGS! -->
+    <script>
+ $(".pinned").pin({containerSelector: ".nexus-frame"})
+
+    </script>
+    <!-- That's all - pretty easy, right? -->    
+    
 </body>
 </html>

@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
-
+body{
+    background: -webkit-radial-gradient(#ededed, #fff, #fff); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#ededed, #fff, #fff); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#ededed, #fff, #fff); /* For Firefox 3.6 to 15 */
+    background: radial-gradient(#ededed, #fff, #fff); /* Standard syntax (must be last) */
+}
 #logo {
 	position:fixed;
 	left: 201px;
@@ -8,16 +13,41 @@
 	height: 100px;
 	width: auto;
 }
-#slide{
-	height:100%;
-	width:auto;
+.slide{
+    position:absolute;
+    height: 469px;:100px;
+	left: 323px;
 	}
-#nexus-frame {
-	position:absolute;
+#picture1{
+    top: 309px;
+}
+#picture2{
+    top: 900px;
+}
+#picture3{
+    top: 1500px;
+}
+#afterpic{
+    position: absolute;
+    top: 2500px;
+}
+#narrowbutton{
+    position: absolute;
+    left: 920px;
+    top: 590px;
+    width: 65px;
+    height: 65px;
+    background-image: url(img/down.png);
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.nexus-frame {
+	position:fixed;
 	height: 700px;
 	width:auto;
-	top:200px;
-	left:250px;
+	top:201px;
+	left:248px;
 	z-index:1;
 	}
 #wrapper {
@@ -27,6 +57,21 @@
 #header {
 	padding:9px;
 	
+}
+h1 {
+    position: absolute;
+    color: #6f6f6f;
+    font: 400 50px / 81.831px Roboto;
+    left: 624px;
+    top:230px
+}
+p{
+    position: absolute;
+    color: #6f6f6f;
+    font: 400 24px / 29.83px Roboto;
+    left: 695px;
+    top: 374px;
+    
 }
 #content {
 	padding-bottom:600px; /* Height of the footer element */
@@ -43,89 +88,10 @@
 	left:0;
 	font-family:'Roboto';
 }		
-.css-slideshow{
-  position: relative;
-/* max-width: 495px; */
-  top:230px;
-  left:320px;
-  right:1000px;
-  height: 370px;
-  margin: 5em auto .5em auto;
-  z-index:2;
- /* background: #0D1C92; */
-}
-.css-slideshow figure{
-	margin: 0;
-	max-width: 495px;
-	height: 474px;
-	background: #0D1C92;
-	position: absolute;
-	left: 1px;
-	top: -24px;
-	width: 269px;
-}
-.css-slideshow img{
-  box-shadow: 0 0 2px #666;
-}
-.css-slideshow figcaption{
-  position: absolute;
-  top: 0;
-  color: #fff;
-  background: rgba(0,0,0, .3);
-  font-size: .8em;
-  padding: 8px 12px;
-  opacity: 0;
-  transition: opacity .5s;
-}
-.css-slideshow:hover figure figcaption{
-  transition: opacity .5s;
-  opacity: 1;
-}
-.css-slideshow-attr{
-  max-width: 495px;
-  text-align: right;
-  font-size: .7em;
-  font-style: italic;
-  margin:0 auto;
-}
-.css-slideshow-attr a{
-  color: #666;
-}
-.css-slideshow figure{
-  opacity:0;
-}
-figure:nth-child(1) {
-  animation: xfade 48s 18s infinite;
-}
-figure:nth-child(2) {
-  animation: xfade 48s 12s infinite;
-}
-figure:nth-child(3) {
-  animation: xfade 48s 6s infinite;
-}
-figure:nth-child(4) {
-  animation: xfade 48s 0s infinite;
-}
-
-@keyframes xfade{
-  0%{
-    opacity: 1;
-  }
-  10.5% {
-    opacity: 1;
-  }
-  12.5%{
-    opacity: 0;
-  }
-  98% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
 
+
+/*Roboto fonts*/
 @font-face {
     font-family: 'Roboto';
     src: url('fonts/Roboto-Regular-webfont.eot');
