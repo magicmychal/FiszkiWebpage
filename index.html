@@ -1,35 +1,74 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Fiszki App</title>
-<link href="style.css" rel="stylesheet" type="text/css">
-<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="jquery.pin.js"></script>
-</head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fiszki App</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+     
+<!--bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- jquery and bootstrap script-->
+    <script type="text/javascript" src="jquery.pin.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<!-- load MUI -->
+    <link href="material/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="material/js/mui.min.js"></script>
+<!-- style for carousel -->
+    <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+    </head>
 <body>
-<div id="header"><img id="logo" src="img/logo.png" width="457" height="192" alt=""/></div>
-<div id="content">
-  <div class="pinned"> <img class="slide" id="picture1" src="Screenshots/Screenshot_2015-10-19-21-14-42.png"/></div>
-    <div class="pinned"> <img class="slide" id="picture2" src="Screenshots/Screenshot_2015-10-28-20-08-43.png"/></div>
-    <div class="pinned"> <img class="slide" id="picture3" src="Screenshots/Screenshot_2015-10-31-14-12-55.png"/></div>
-   <img class="nexus-frame" src="img/Nexus5.png" />
-    <h1>Ucz się słówek szybciej niż kiedyolwiek! </h1>
-    <p>Aplikacja fiszki powzstałą z myślą o każdej osobie, <br>która chce w krótkim okresie czasu nauczyć się słów w języku obcym. <br>Dzięki aplikacji Fiszki nie trzeba spędzać ani 5 minut na nukę, <br>ponieważ uczysz sie przez chwilę co 15 minut.<br> Daje to świetne rezultaty i nie zajmuje czasu!<br> Wsyzstko co musisz zrobić, to wpisać słowa, których chcesz się nauczyć</p>
+    <div id="header"><img id="logo" src="img/logo.png" width="457" height="192" alt=""/></div>
+    <div class="mui-container">
+        <div id="content">
+    
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img class=" picture" src="Screenshots/Screenshot_2015-10-19-21-14-42.png" alt="Chania" width="460" height="345">
+      </div>
 
-</div>
-<div id="afterpic">tu nic nie ma</div>
+      <div class="item">
+        <img class=" picture" src="Screenshots/Screenshot_2015-10-28-20-08-43.png" alt="Chania" width="460" height="345">
+      </div>
+    </div>
+        </div>
+    
+        
+            <img class="nexus-frame" src="img/Nexus5.png" />
+            <h1>Ucz się słówek szybciej niż kiedyolwiek! </h1>
+            <div class="panel">
+            <p>Aplikacja fiszki powzstałą z myślą o każdej osobie, <br>która chce w krótkim okresie czasu nauczyć się słów w języku obcym. <br>Dzięki aplikacji Fiszki nie trzeba spędzać ani 5 minut na nukę, <br>ponieważ uczysz sie przez chwilę co 15 minut.<br> Daje to świetne rezultaty i nie zajmuje czasu!<br> Wsyzstko co musisz zrobić, to wpisać słowa, których chcesz się nauczyć</p>
+             <button class="mui-btn mui-btn--primary mui-btn--raised">Pobierz</button>
+            </div>
+        
+    
+    </div>
+   
+    
+    <div id="afterpic">tu nic nie ma</div>
 
-    
-    
-    
-    
-    <!-- PIN ALL THE THINGS! -->
-    <script>
- $(".pinned").pin({containerSelector: ".nexus-frame"})
 
-    </script>
-    <!-- That's all - pretty easy, right? -->    
-    
 </body>
 </html>
+
+
+<!--            <div class="pinned"> <img class="slide" id="picture1" src="Screenshots/Screenshot_2015-10-19-21-14-42.png"/></div>
+            <div class="pinned"> <img class="slide" id="picture2" src="Screenshots/Screenshot_2015-10-28-20-08-43.png"/></div>
+            <div class="pinned"> <img class="slide" id="picture3" src="Screenshots/Screenshot_2015-10-31-14-12-55.png"/></div> -->
