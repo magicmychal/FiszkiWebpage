@@ -6,6 +6,16 @@ body{
     background: -moz-radial-gradient(#ededed, #fff, #fff); /* For Firefox 3.6 to 15 */
     background: radial-gradient(#ededed, #fff, #fff); /* Standard syntax (must be last) */
 }
+.mui-container{
+    position: absolute;
+    top: 308px;
+    left: 133px;
+}
+.carousel-inner{
+    width:200px;
+    height:500px;
+    position:relative;
+}
 #logo {
 	position:fixed;
 	left: 201px;
@@ -13,30 +23,16 @@ body{
 	height: 100px;
 	width: auto;
 }
-.slide{
+slide{
     position:absolute;
     height: 460px;:100px;
-	left: 23px;
+	left: 0px;
 	}
 .picture{
-    position:relative;
-    bottom: 229px;
-    top: 300px;
-    left: 20px
+    height:20%;
+        
 }
-#picture1{
-    top: 309px;
-}
-#picture2{
-    top: 900px;
-}
-#picture3{
-    top: 1500px;
-}
-#afterpic{
-    position: absolute;
-    top: 2500px;
-}
+
 
 
 .nexus-frame {
@@ -63,12 +59,8 @@ h1 {
     color: #6f6f6f;
     font: 400 24px / 29.83px Roboto;
     left: 695px;
-    top: 374px;
+    top: 34px;
     
 }
-#content {
-	padding-bottom:600px; /* Height of the footer element */
-}
-
 
 
