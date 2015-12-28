@@ -1,20 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-    background: -webkit-radial-gradient(#ededed, #fff, #fff); /* Safari 5.1 to 6.0 */
-    background: -o-radial-gradient(#ededed, #fff, #fff); /* For Opera 11.6 to 12.0 */
-    background: -moz-radial-gradient(#ededed, #fff, #fff); /* For Firefox 3.6 to 15 */
-    background: radial-gradient(#ededed, #fff, #fff); /* Standard syntax (must be last) */
+    background-color: #ededed
 }
-.mui-container{
+#myCarousel{
     position: absolute;
     top: 308px;
-    left: 133px;
-}
-.carousel-inner{
-    width:200px;
-    height:500px;
-    position:relative;
+    left: 264px;
+    height: 470px;
+    width:380px;
 }
 #logo {
 	position:fixed;
@@ -23,18 +17,10 @@ body{
 	height: 100px;
 	width: auto;
 }
-slide{
-    position:absolute;
-    height: 460px;:100px;
-	left: 0px;
-	}
 .picture{
     height:20%;
         
 }
-
-
-
 .nexus-frame {
 	position:fixed;
 	height: 700px;
@@ -51,15 +37,15 @@ h1 {
     position: absolute;
     color: #6f6f6f;
     font: 400 50px / 81.831px Roboto;
-    left: 624px;
+    left: 695px;
     top:230px
 }
-.panel{
+.text{
     position: absolute;
     color: #6f6f6f;
     font: 400 24px / 29.83px Roboto;
     left: 695px;
-    top: 34px;
+    top: 340px;
     
 }
 
